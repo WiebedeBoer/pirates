@@ -13,6 +13,13 @@ class Country extends Model
 	//towns
     public function towns()
     {
-        return $this->hasMany('App\Town','country_id');
+        return $this->hasMany('App\Town','country');
     }	
+
+	//towns
+    public function colonies()
+    {
+        return $this->hasMany('App\Colony','country');
+    }		
+	
 }

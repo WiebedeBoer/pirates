@@ -4,11 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Town extends Model
+class Colony extends Model
 {
     //towns table
-    protected $table = 'towns';
-    protected $primaryKey = 'town_id';
+    protected $table = 'colonies';
+    protected $primaryKey = 'colony_id';
 	
 	//fk
     public function countries()
@@ -16,8 +16,10 @@ class Town extends Model
         return $this->belongsTo('App\Country','country');
     } 
 	
-    public function colonies()
+	//towns
+    public function towns()
     {
-        return $this->belongsTo('App\Colony','colony');
-    } 
+        return $this->hasMany('App\Town','colony');
+    }	
+	
 }

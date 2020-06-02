@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
 		$this->call('fkSeeder');
 		//countries
 		$this->call('CountrySeeder');
+		//colonies
+		$this->call('ColonySeeder');
 		//towns
 		$this->call('TownSeeder');
     }
@@ -30,9 +32,14 @@ class fkSeeder extends Seeder
 	//foreign keys
     public function run()
     {
+		//colonies
+		Schema::table('colonies', function (Blueprint $table) {
+			$table->foreign('country')->references('country_id')->on('countries');		
+        });	
 		//towns
 		Schema::table('towns', function (Blueprint $table) {
-			$table->foreign('country')->references('country_id')->on('countries');		
+			$table->foreign('country')->references('country_id')->on('countries');	
+			$table->foreign('colony')->references('colony_id')->on('colonies');	
         });
 		
 	}

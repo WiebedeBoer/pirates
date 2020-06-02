@@ -18,6 +18,7 @@ class CreateTownsTable extends Migration
 			$table->string('town_name');
 			//fk
 			$table->unsignedBigInteger('country')->nullable();
+			$table->unsignedBigInteger('colony')->nullable();
 			//coordinates
 			$table->integer('xcoord')->default(1);
 			$table->integer('ycoord')->default(1);
@@ -26,9 +27,9 @@ class CreateTownsTable extends Migration
 			//size
 			$table->string('category_size')->default('town');
 			//plantation
-			$table->string('plantation')->default('sugar');
+			$table->string('plantation')->default('none');
 			//factory
-			$table->string('factory')->default('cloth');
+			$table->string('factory')->default('none');
 			//population
 			$table->integer('population')->default(1000);
 			//soldiers
@@ -46,6 +47,7 @@ class CreateTownsTable extends Migration
 			$table->integer('naval_stores')->default(0);
 			//mining
 			$table->integer('salt')->default(0);
+			$table->integer('silver')->default(0);
 			//farm
 			$table->integer('meat')->default(0);
 			$table->integer('fruits')->default(0);
