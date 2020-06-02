@@ -61,5 +61,29 @@ class CountrySeeder extends Seeder
 			'flag' => 'sp',
 			'song' => 'marchareal'
 		]);
+		//7
+		DB::table('countries')->insert([
+			'country_name' => 'Denmark',
+			'capital' => 'Copenhagen',
+			'port' => 'Copenhagen',
+			'flag' => 'de',
+			'song' => 'yndigt'
+		]);
+		//8
+		DB::table('countries')->insert([
+			'country_name' => 'Courland',
+			'capital' => 'Mitau',
+			'port' => 'Libau',
+			'flag' => 'co',
+			'song' => 'dievs'
+		]);
+		//9
+		DB::table('countries')->insert([
+			'country_name' => 'Knights Hospitaller',
+			'capital' => 'Valletta',
+			'port' => 'Valletta',
+			'flag' => 'ho',
+			'song' => 'crusader'
+		]);
     }
 }
