@@ -1,0 +1,65 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class CountrySeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+		//countries
+	
+		//1
+		DB::table('countries')->insert([
+			'country_name' => 'Pirates',
+			'capital' => 'Port Royal',
+			'port' => 'Port Royal',
+			'flag' => 'pi',
+			'song' => 'yohoho'
+		]);	
+		//2
+		DB::table('countries')->insert([
+			'country_name' => 'Buccaneers',
+			'capital' => 'Tortuga',
+			'port' => 'Tortuga',
+			'flag' => 'bu',
+			'song' => 'yohoho'
+		]);	
+		//3
+		DB::table('countries')->insert([
+			'country_name' => 'Netherlands',
+			'capital' => 'Amsterdam',
+			'port' => 'Amsterdam',
+			'flag' => 'nl',
+			'song' => 'wilhelmus'
+		]);
+		//4
+		DB::table('countries')->insert([
+			'country_name' => 'England',
+			'capital' => 'London',
+			'port' => 'London',
+			'flag' => 'en',
+			'song' => 'rulesthewaves'
+		]);
+		//5
+		DB::table('countries')->insert([
+			'country_name' => 'France',
+			'capital' => 'Paris',
+			'port' => 'Nantes',
+			'flag' => 'fr',
+			'song' => 'vivehenry'
+		]);
+		//6
+		DB::table('countries')->insert([
+			'country_name' => 'Spain',
+			'capital' => 'Madrid',
+			'port' => 'Seville',
+			'flag' => 'sp',
+			'song' => 'marchareal'
+		]);
+    }
+}
