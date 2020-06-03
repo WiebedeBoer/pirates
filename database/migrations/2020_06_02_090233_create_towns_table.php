@@ -34,23 +34,23 @@ class CreateTownsTable extends Migration
 			//fort
 			$table->string('fort')->default('none');
 			//plantation culture
-			$table->string('sugarcane_plantation')->default('none');
-			$table->string('spices_plantation')->default('none');
-			$table->string('cocoa_plantation')->default('none');
-			$table->string('tobacco_plantation')->default('none');
-			$table->string('coffee_plantation')->default('none');
-			$table->string('cotton_plantation')->default('none');
-			$table->string('dyes_plantation')->default('none');
+			$table->string('sugarcane_plantation')->default('none'); //sugarcane
+			$table->string('spices_plantation')->default('none'); //spices
+			$table->string('cocoa_plantation')->default('none'); //cocoa
+			$table->string('tobacco_plantation')->default('none'); //tobacco
+			$table->string('coffee_plantation')->default('none'); //coffee
+			$table->string('cotton_plantation')->default('none'); //cotton
+			$table->string('dyes_plantation')->default('none'); //indigo
 			//farming culture
-			$table->string('farming')->default('none');
-			//saw and cloth mill culture
-			$table->string('mill')->default('none');
+			$table->string('farming')->default('none'); //fruits, meat
+			//mill culture
+			$table->string('mill')->default('none'); //wood, textiles
 			//mining culture
-			$table->string('mining')->default('none');
+			$table->string('mining')->default('none'); //salt, silver
 			//factory culture
-			$table->string('factory')->default('none');
+			$table->string('factory')->default('none'); //calico, goods, leatherwork, pottery
 			//distillery culture
-			$table->string('distillery')->default('none');
+			$table->string('distillery')->default('none'); //rum
 			//plantation production
 			$table->integer('sugar')->default(0);
 			$table->integer('spices')->default(0);
