@@ -12,21 +12,20 @@ class CountrySeeder extends Seeder
     public function run()
     {
 		//countries
-	
 		//1
 		DB::table('countries')->insert([
-			'country_name' => 'Pirates',
+			'country_name' => 'Brethren of the Coast',
 			'capital' => 'Port Royal',
 			'port' => 'Port Royal',
-			'flag' => 'pi',
+			'flag' => 'bh',
 			'song' => 'yohoho'
 		]);	
 		//2
 		DB::table('countries')->insert([
-			'country_name' => 'Buccaneers',
-			'capital' => 'Tortuga',
-			'port' => 'Tortuga',
-			'flag' => 'bu',
+			'country_name' => 'Pirates Republic',
+			'capital' => 'Nassau',
+			'port' => 'Nassau',
+			'flag' => 'pi',
 			'song' => 'yohoho'
 		]);	
 		//3

@@ -16,10 +16,16 @@ class Country extends Model
         return $this->hasMany('App\Town','country');
     }	
 
-	//towns
+	//colonies
     public function colonies()
     {
         return $this->hasMany('App\Colony','country');
+    }
+
+	//governors
+    public function governors()
+    {
+        return $this->hasMany('App\Governor','country');
     }		
 	
 }

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Colony extends Model
 {
-    //towns table
+    //colonies table
     protected $table = 'colonies';
     protected $primaryKey = 'colony_id';
 	
@@ -20,6 +20,12 @@ class Colony extends Model
     public function towns()
     {
         return $this->hasMany('App\Town','colony');
+    }	
+	
+	//governors
+    public function governors()
+    {
+        return $this->hasMany('App\Governor','colony');
     }	
 	
 }

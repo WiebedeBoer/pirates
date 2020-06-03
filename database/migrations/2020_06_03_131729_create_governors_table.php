@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateColoniesTable extends Migration
+class CreateGovernorsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateColoniesTable extends Migration
      */
     public function up()
     {
-        Schema::create('colonies', function (Blueprint $table) {
-            $table->bigIncrements('colony_id');
-			$table->string('colony_name');
+        Schema::create('governors', function (Blueprint $table) {
+            $table->bigIncrements('governor_id');
+			$table->string('governor_name');
 			//fk
+			$table->unsignedBigInteger('palace')->nullable();
+			$table->unsignedBigInteger('colony')->nullable();
 			$table->unsignedBigInteger('country')->nullable();
-			//timestamps
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ class CreateColoniesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('colonies');
+        Schema::dropIfExists('governors');
     }
 }

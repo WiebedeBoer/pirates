@@ -4,27 +4,25 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Town extends Model
+class Governor extends Model
 {
-    //towns table
-    protected $table = 'towns';
-    protected $primaryKey = 'town_id';
+    //governors table
+    protected $table = 'governors';
+    protected $primaryKey = 'governor_id';
 	
 	//fk
     public function countries()
     {
         return $this->belongsTo('App\Country','country');
-    } 
+    }
 	
     public function colonies()
     {
         return $this->belongsTo('App\Colony','colony');
-    } 
+    }
 	
-	//governors
-    public function governors()
+    public function palaces()
     {
-        return $this->hasMany('App\Governor','palace');
-    }		
-	
+        return $this->belongsTo('App\Town','palace');
+    }
 }

@@ -24,6 +24,8 @@ class DatabaseSeeder extends Seeder
 		$this->call('ColonySeeder');
 		//towns
 		$this->call('TownSeeder');
+		//governors
+		$this->call('GovernorSeeder');
     }
 }
 
@@ -40,6 +42,12 @@ class fkSeeder extends Seeder
 		Schema::table('towns', function (Blueprint $table) {
 			$table->foreign('country')->references('country_id')->on('countries');	
 			$table->foreign('colony')->references('colony_id')->on('colonies');	
+        });
+		//governors
+		Schema::table('governors', function (Blueprint $table) {
+			$table->foreign('palace')->references('town_id')->on('towns');	
+			$table->foreign('colony')->references('colony_id')->on('colonies');	
+			$table->foreign('country')->references('country_id')->on('countries');
         });
 		
 	}
