@@ -11,7 +11,7 @@ class TownSeeder extends Seeder
      */
     public function run()
     {
-		//pirate towns, 8 towns, 3 colonies
+		//pirate towns, 9 towns, 3 colonies
 		//1, jamaica
 		DB::table('towns')->insert([
 			'town_name' => 'Port Royal',
@@ -21,11 +21,21 @@ class TownSeeder extends Seeder
 			'ycoord' => '1413',
 			'foundation' => '1494',
 			'category_size' => 'city',
-			'plantation' => 'cocoa',
-			'factory' => 'luxuries',
 			'population' => '6500',
 			'guards' => '500',
-			'fort' => 'Fort Charles'
+			'fort' => 'Fort Charles',			
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'indigo',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'jewelry',
+			'distillery' => 'rum'				
 		]);
 		//2, jamaica
 		DB::table('towns')->insert([
@@ -36,11 +46,21 @@ class TownSeeder extends Seeder
 			'ycoord' => '1365',
 			'foundation' => '1511',
 			'category_size' => 'town',
-			'plantation' => 'meat',
-			'factory' => 'luxuries',
 			'population' => '4000',
 			'guards' => '500',
-			'fort' => 'Fort Montego'
+			'fort' => 'Fort Montego',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'indigo',
+			'farming' => 'meat',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'leatherwork',
+			'distillery' => 'rum'	
 		]);	
 		//3, cayman islands, jamaica
 		DB::table('towns')->insert([
@@ -51,11 +71,21 @@ class TownSeeder extends Seeder
 			'ycoord' => '1288',
 			'foundation' => '1661',
 			'category_size' => 'town',
-			'plantation' => 'tobacco',
-			'factory' => 'goods',
 			'population' => '1000',
 			'guards' => '200',
-			'fort' => 'Fort George'
+			'fort' => 'Fort George',			
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'none'	
 		]);
 		//4, belize, honduras
 		DB::table('towns')->insert([
@@ -66,28 +96,73 @@ class TownSeeder extends Seeder
 			'ycoord' => '1451',
 			'foundation' => '1638',
 			'category_size' => 'town',
-			'plantation' => 'naval stores',
-			'factory' => 'goods',
 			'population' => '1000',
 			'guards' => '200',
-			'fort' => 'Fort Barlee'
+			'fort' => 'Fort Barlee',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'wood',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'rum'
 		]);	
 		//5, belize, honduras
 		DB::table('towns')->insert([
-			'town_name' => 'Belize',
+			'town_name' => 'Bluefields',
 			'country' => '1',
 			'colony' => '2',
 			'xcoord' => '892',
 			'ycoord' => '1280',
-			'foundation' => '1957',
+			'foundation' => '1657',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '400',
 			'guards' => '80',
-			'fort' => 'Fort Bay'
-		]);	
-		//6, yucatan, jamaica, belize, honduras
+			'fort' => 'Fort Bay',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'wood',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'	
+		]);
+		//6, providence, honduras
+		DB::table('towns')->insert([
+			'town_name' => 'Providence',
+			'country' => '1',
+			'colony' => '2',
+			'xcoord' => '1461',
+			'ycoord' => '1901',
+			'foundation' => '1632',
+			'category_size' => 'town',
+			'population' => '600',
+			'guards' => '100',
+			'fort' => 'Fort Bay',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'textiles',
+			'mining' => 'none',
+			'factory' => 'calico',
+			'distillery' => 'none'	
+		]);		
+		//7, yucatan, jamaica, belize, honduras
 		DB::table('towns')->insert([
 			'town_name' => 'Carmen',
 			'country' => '1',
@@ -96,13 +171,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1344',
 			'foundation' => '1672',
 			'category_size' => 'town',
-			'plantation' => 'spices',
-			'factory' => 'goods',
 			'population' => '1500',
 			'guards' => '300',
-			'fort' => 'Fort '
+			'fort' => 'Fort ',	
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'spices',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'none'	
 		]);	
-		//7, roatan, bay islands, belize, honduras
+		//8, roatan, bay islands, belize, honduras
 		DB::table('towns')->insert([
 			'town_name' => 'Coxen Hole',
 			'country' => '1',
@@ -111,13 +196,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1562',
 			'foundation' => '1643',
 			'category_size' => 'town',
-			'plantation' => 'salt',
-			'factory' => 'cloth',
 			'population' => '500',
 			'guards' => '80',
-			'fort' => 'Fort Linwell'
+			'fort' => 'Fort Linwell',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'textiles',
+			'mining' => 'salt',
+			'factory' => 'calico',
+			'distillery' => 'rum'	
 		]);			
-		//8, tortuga, haiti, tortuga
+		//9, tortuga, haiti, tortuga
 		DB::table('towns')->insert([
 			'town_name' => 'Tortuga',
 			'country' => '1',
@@ -126,14 +221,24 @@ class TownSeeder extends Seeder
 			'ycoord' => '1221',
 			'foundation' => '1625',
 			'category_size' => 'town',
-			'plantation' => 'tobacco',
-			'factory' => 'cloth',
 			'population' => '2500',
 			'guards' => '400',
-			'fort' => 'Fort de Rocher'
+			'fort' => 'Fort de Rocher',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'textiles',
+			'mining' => 'none',
+			'factory' => 'pottery',
+			'distillery' => 'none'
 		]);
 		//buccaneer towns, 2 towns, 1 colony
-		//9, new providence, bahamas
+		//10, new providence, bahamas
 		DB::table('towns')->insert([
 			'town_name' => 'Nassau',
 			'country' => '2',
@@ -142,13 +247,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '739',
 			'foundation' => '1670',
 			'category_size' => 'town',
-			'plantation' => 'meat',
-			'factory' => 'cloth',
 			'population' => '900',
 			'guards' => '200',
-			'fort' => 'Fort Montagu'
+			'fort' => 'Fort Montagu',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'textiles',
+			'mining' => 'none',
+			'factory' => 'calico',
+			'distillery' => 'none'
 		]);	
-		//10, eleuthera, bahamas
+		//11, eleuthera, bahamas
 		DB::table('towns')->insert([
 			'town_name' => 'Governors Harbour',
 			'country' => '2',
@@ -157,14 +272,24 @@ class TownSeeder extends Seeder
 			'ycoord' => '727',
 			'foundation' => '1648',
 			'category_size' => 'town',
-			'plantation' => 'meat',
-			'factory' => 'cloth',
 			'population' => '900',
 			'guards' => '200',
-			'fort' => 'Fort Charlotte'
+			'fort' => 'Fort Charlotte',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'textiles',
+			'mining' => 'none',
+			'factory' => 'leatherwork',
+			'distillery' => 'none'
 		]);
 		//dutch towns, 6 towns, 2 colonies
-		//11, curacao, leeward
+		//12, curacao, leeward
 		DB::table('towns')->insert([
 			'town_name' => 'Willemstad',
 			'country' => '3',
@@ -173,13 +298,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1944',
 			'foundation' => '1634',
 			'category_size' => 'town',
-			'plantation' => 'salt',
-			'factory' => 'goods',
 			'population' => '5000',
 			'guards' => '500',
-			'fort' => 'Fort Amsterdam'
+			'fort' => 'Fort Amsterdam',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'none',
+			'mining' => 'salt',
+			'factory' => 'goods',
+			'distillery' => 'none'
 		]);	
-		//12, aruba, leeward
+		//13, aruba, leeward
 		DB::table('towns')->insert([
 			'town_name' => 'Oranjestad',
 			'country' => '3',
@@ -188,13 +323,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1906',
 			'foundation' => '1636',
 			'category_size' => 'town',
-			'plantation' => 'meat',
-			'factory' => 'goods',
 			'population' => '3000',
 			'guards' => '400',
-			'fort' => 'Fort Zoutman'
+			'fort' => 'Fort Zoutman',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'leatherwork',
+			'distillery' => 'none'
 		]);	
-		//13, bonaire, leeward
+		//14, bonaire, leeward
 		DB::table('towns')->insert([
 			'town_name' => 'Playa',
 			'country' => '3',
@@ -203,13 +348,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1939',
 			'foundation' => '1639',
 			'category_size' => 'town',
-			'plantation' => 'meat',
-			'factory' => 'goods',
 			'population' => '300',
 			'guards' => '60',
-			'fort' => 'Fort Oranje'
+			'fort' => 'Fort Oranje',			
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'leatherwork',
+			'distillery' => 'none'
 		]);
-		//14, st. eustatius, windward
+		//15, st. eustatius, windward
 		DB::table('towns')->insert([
 			'town_name' => 'Oranjestad',
 			'country' => '3',
@@ -218,13 +373,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1456',
 			'foundation' => '1636',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '300',
 			'guards' => '60',
-			'fort' => 'Fort Oranje'
+			'fort' => 'Fort Oranje',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'rum'
 		]);	
-		//15, st. martin, windward
+		//16, st. martin, windward
 		DB::table('towns')->insert([
 			'town_name' => 'Philipsburg',
 			'country' => '3',
@@ -233,13 +398,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1405',
 			'foundation' => '1631',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '300',
 			'guards' => '60',
-			'fort' => 'Fort Willem'
+			'fort' => 'Fort Willem',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'textiles',
+			'mining' => 'salt',
+			'factory' => 'calico',
+			'distillery' => 'rum'
 		]);
-		//16, saba, windward
+		//17, saba, windward
 		DB::table('towns')->insert([
 			'town_name' => 'De Botte',
 			'country' => '3',
@@ -248,12 +423,22 @@ class TownSeeder extends Seeder
 			'ycoord' => '1442',
 			'foundation' => '1640',
 			'category_size' => 'village',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
-			'population' => '200'
+			'population' => '200',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'indigo',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'calico',
+			'distillery' => 'rum'
 		]);
 		//english towns, 7 towns, 2	colonies		
-		//17, antigua, leewards islands
+		//18, antigua, leewards islands
 		DB::table('towns')->insert([
 			'town_name' => 'Saint Johns',
 			'country' => '4',
@@ -262,13 +447,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1485',
 			'foundation' => '1632',
 			'category_size' => 'town',
-			'plantation' => 'spices',
-			'factory' => 'luxuries',
 			'population' => '3000',
 			'guards' => '500',
-			'fort' => 'Fort James'
+			'fort' => 'Fort James',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'spices',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'textiles',
+			'mining' => 'none',
+			'factory' => 'calico',
+			'distillery' => 'rum'
 		]);	
-		//18, barbuda, leewards islands
+		//19, barbuda, leewards islands
 		DB::table('towns')->insert([
 			'town_name' => 'Codrington',
 			'country' => '4',
@@ -277,11 +472,21 @@ class TownSeeder extends Seeder
 			'ycoord' => '1445',
 			'foundation' => '1667',
 			'category_size' => 'village',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
-			'population' => '200'
+			'population' => '200',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);
-		//19, anguilla, leewards islands
+		//20, anguilla, leewards islands
 		DB::table('towns')->insert([
 			'town_name' => 'The Valley',
 			'country' => '4',
@@ -290,11 +495,21 @@ class TownSeeder extends Seeder
 			'ycoord' => '1386',
 			'foundation' => '1667',
 			'category_size' => 'village',
-			'plantation' => 'tobacco',
-			'factory' => 'luxuries',
-			'population' => '200'
+			'population' => '200',			
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'jewelry',
+			'distillery' => 'rum'
 		]);
-		//20, turks and caicos islands, leewards islands
+		//21, turks and caicos islands, leewards islands
 		DB::table('towns')->insert([
 			'town_name' => 'Cockburn Town',
 			'country' => '4',
@@ -303,13 +518,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1083',
 			'foundation' => '1681',
 			'category_size' => 'town',
-			'plantation' => 'salt',
-			'factory' => 'goods',
 			'population' => '900',
 			'guards' => '200',
-			'fort' => 'Fort George'
+			'fort' => 'Fort George',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'textiles',
+			'mining' => 'salt',
+			'factory' => 'calico',
+			'distillery' => 'rum'
 		]);	
-		//21, montserrat, leewards islands
+		//22, montserrat, leewards islands
 		DB::table('towns')->insert([
 			'town_name' => 'Plymouth',
 			'country' => '4',
@@ -318,13 +543,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1527',
 			'foundation' => '1632',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '400',
 			'guards' => '60',
-			'fort' => 'Fort George'
+			'fort' => 'Fort George',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//22, barbados, windward islands
+		//23, barbados, windward islands
 		DB::table('towns')->insert([
 			'town_name' => 'Bridgetown',
 			'country' => '4',
@@ -333,13 +568,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1854',
 			'foundation' => '1628',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '5000',
 			'guards' => '500',
-			'fort' => 'Fort Charles'
+			'fort' => 'Fort Charles',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//23, grenada, windward islands
+		//24, grenada, windward islands
 		DB::table('towns')->insert([
 			'town_name' => 'Saint Georges',
 			'country' => '4',
@@ -348,14 +593,24 @@ class TownSeeder extends Seeder
 			'ycoord' => '1949',
 			'foundation' => '1650',
 			'category_size' => 'town',
-			'plantation' => 'cocoa',
-			'factory' => 'goods',
 			'population' => '3500',
 			'guards' => '500',
-			'fort' => 'Fort Royal'
+			'fort' => 'Fort Royal',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'spices',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'rum'
 		]);	
 		//french towns, 7 towns, 2 colonies
-		//24, martinique
+		//25, martinique
 		DB::table('towns')->insert([
 			'town_name' => 'Saint Pierre',
 			'country' => '5',
@@ -364,13 +619,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1704',
 			'foundation' => '1638',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '4000',
 			'guards' => '500',
-			'fort' => 'Fort de France'
+			'fort' => 'Fort de France',
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'indigo',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//25, guadeloupe
+		//26, guadeloupe
 		DB::table('towns')->insert([
 			'town_name' => 'Pointe a Pitre',
 			'country' => '5',
@@ -379,13 +644,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1570',
 			'foundation' => '1626',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '3000',
 			'guards' => '500',
-			'fort' => 'Fort Fleur'
+			'fort' => 'Fort Fleur',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//26, marie galante, guadeloupe
+		//27, marie galante, guadeloupe
 		DB::table('towns')->insert([
 			'town_name' => 'Grand Bourg',
 			'country' => '5',
@@ -394,13 +669,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1591',
 			'foundation' => '1653',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '500',
 			'guards' => '80',
-			'fort' => 'Vieux Fort'
+			'fort' => 'Vieux Fort',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);
-		//27, st. lucia
+		//28, st. lucia
 		DB::table('towns')->insert([
 			'town_name' => 'Castries',
 			'country' => '5',
@@ -409,13 +694,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1770',
 			'foundation' => '1650',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '3500',
 			'guards' => '500',
-			'fort' => 'Vieux Fort'
+			'fort' => 'Vieux Fort',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//28, dominica
+		//29, dominica
 		DB::table('towns')->insert([
 			'town_name' => 'Roseau',
 			'country' => '5',
@@ -424,13 +719,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1655',
 			'foundation' => '1660',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '3000',
 			'guards' => '500',
-			'fort' => 'Fort Comfort'
+			'fort' => 'Fort Comfort',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//29, haiti
+		//30, haiti
 		DB::table('towns')->insert([
 			'town_name' => 'Port de Paix',
 			'country' => '5',
@@ -439,13 +744,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1227',
 			'foundation' => '1665',
 			'category_size' => 'town',
-			'plantation' => 'coffee',
-			'factory' => 'luxuries',
 			'population' => '4500',
 			'guards' => '500',
-			'fort' => 'Fort des Trois Pavillions'
+			'fort' => 'Fort des Trois Pavillions',			
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'indigo',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'jewelry',
+			'distillery' => 'rum'
 		]);	
-		//30, haiti
+		//31, haiti
 		DB::table('towns')->insert([
 			'town_name' => 'Petit Goave',
 			'country' => '5',
@@ -454,14 +769,24 @@ class TownSeeder extends Seeder
 			'ycoord' => '1355',
 			'foundation' => '1663',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '1200',
 			'guards' => '200',
-			'fort' => 'Fort Jacques'
+			'fort' => 'Fort Jacques',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'indigo',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);			
-		//spanish towns, 25 towns, 7 colonies
-		//31, hispaniola
+		//spanish towns, 26 towns, 7 colonies
+		//32, hispaniola
 		DB::table('towns')->insert([
 			'town_name' => 'Santo Domingo',
 			'country' => '6',
@@ -470,13 +795,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1365',
 			'foundation' => '1496',
 			'category_size' => 'city',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '6500',
 			'guards' => '500',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//32, hispaniola
+		//33, hispaniola
 		DB::table('towns')->insert([
 			'town_name' => 'Puerto Plata',
 			'country' => '6',
@@ -485,13 +820,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1240',
 			'foundation' => '1496',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '2500',
 			'guards' => '400',
-			'fort' => 'Fort Felipe'
+			'fort' => 'Fort Felipe',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//33, puerto rico
+		//34, puerto rico
 		DB::table('towns')->insert([
 			'town_name' => 'San Juan',
 			'country' => '6',
@@ -500,13 +845,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1366',
 			'foundation' => '1493',
 			'category_size' => 'city',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '6500',
 			'guards' => '500',
-			'fort' => 'Fort Segarra'
+			'fort' => 'Fort Segarra',			
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//34, puerto rico
+		//35, puerto rico
 		DB::table('towns')->insert([
 			'town_name' => 'Ponce',
 			'country' => '6',
@@ -515,11 +870,21 @@ class TownSeeder extends Seeder
 			'ycoord' => '1409',
 			'foundation' => '1670',
 			'category_size' => 'village',
-			'plantation' => 'meat',
-			'factory' => 'cloth',
-			'population' => '200'
+			'population' => '200',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'textiles',
+			'mining' => 'none',
+			'factory' => 'leatherwork',
+			'distillery' => 'rum'
 		]);	
-		//35, cuba
+		//36, cuba
 		DB::table('towns')->insert([
 			'town_name' => 'Havana',
 			'country' => '6',
@@ -528,13 +893,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '924',
 			'foundation' => '1519',
 			'category_size' => 'city',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '6500',
 			'guards' => '500',
-			'fort' => 'Fort de los Tres Reyes'
+			'fort' => 'Fort de los Tres Reyes',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//36, cuba
+		//37, cuba
 		DB::table('towns')->insert([
 			'town_name' => 'Santiago',
 			'country' => '6',
@@ -543,13 +918,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1225',
 			'foundation' => '1515',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '4000',
 			'guards' => '500',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//37, cuba
+		//38, cuba
 		DB::table('towns')->insert([
 			'town_name' => 'Baracoa',
 			'country' => '6',
@@ -558,13 +943,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1189',
 			'foundation' => '1511',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '4000',
 			'guards' => '500',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//38, florida, cuba
+		//39, florida, cuba
 		DB::table('towns')->insert([
 			'town_name' => 'Saint Augustine',
 			'country' => '6',
@@ -573,13 +968,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '263',
 			'foundation' => '1565',
 			'category_size' => 'town',
-			'plantation' => 'naval stores',
-			'factory' => 'goods',
 			'population' => '1200',
 			'guards' => '200',
-			'fort' => 'Fort Caroline'
+			'fort' => 'Fort Caroline',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'wood',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'none'
 		]);	
-		//39, florida, cuba
+		//40, florida, cuba
 		DB::table('towns')->insert([
 			'town_name' => 'Pensacola',
 			'country' => '6',
@@ -588,13 +993,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '209',
 			'foundation' => '1559',
 			'category_size' => 'town',
-			'plantation' => 'cotton',
-			'factory' => 'cloth',
 			'population' => '1500',
 			'guards' => '300',
-			'fort' => 'Fort George'
+			'fort' => 'Fort George',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'textiles',
+			'mining' => 'none',
+			'factory' => 'calico',
+			'distillery' => 'none'
 		]);	
-		//40, mexico
+		//41, mexico
 		DB::table('towns')->insert([
 			'town_name' => 'Veracruz',
 			'country' => '6',
@@ -603,13 +1018,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1294',
 			'foundation' => '1519',
 			'category_size' => 'city',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '6500',
 			'guards' => '500',
-			'fort' => 'Fort Juan'
+			'fort' => 'Fort Juan',
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'silver',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//41, mexico
+		//42, mexico
 		DB::table('towns')->insert([
 			'town_name' => 'Tampico',
 			'country' => '6',
@@ -618,11 +1043,21 @@ class TownSeeder extends Seeder
 			'ycoord' => '1007',
 			'foundation' => '1532',
 			'category_size' => 'village',
-			'plantation' => 'silver',
-			'factory' => 'goods',
-			'population' => '200'
+			'population' => '200',	
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'none',
+			'mining' => 'silver',
+			'factory' => 'leatherwork',
+			'distillery' => 'none'
 		]);	
-		//42, yucatan
+		//43, yucatan
 		DB::table('towns')->insert([
 			'town_name' => 'Campeche',
 			'country' => '6',
@@ -631,13 +1066,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1234',
 			'foundation' => '1526',
 			'category_size' => 'town',
-			'plantation' => 'salt',
-			'factory' => 'luxuries',
 			'population' => '2500',
 			'guards' => '300',
-			'fort' => 'Fort Miguel'
+			'fort' => 'Fort Miguel',	
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'salt',
+			'factory' => 'pottery',
+			'distillery' => 'none'
 		]);		
-		//43, guatemala
+		//44, guatemala
 		DB::table('towns')->insert([
 			'town_name' => 'Trujillo',
 			'country' => '6',
@@ -646,13 +1091,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1599',
 			'foundation' => '1524',
 			'category_size' => 'town',
-			'plantation' => 'meat',
-			'factory' => 'goods',
 			'population' => '3000',
 			'guards' => '500',
-			'fort' => 'Fort Barbara'
+			'fort' => 'Fort Barbara',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'indigo',
+			'farming' => 'meat',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'leatherwork',
+			'distillery' => 'none'
 		]);	
-		//44, guatemala
+		//45, guatemala
 		DB::table('towns')->insert([
 			'town_name' => 'Omoa',
 			'country' => '6',
@@ -661,13 +1116,48 @@ class TownSeeder extends Seeder
 			'ycoord' => '1611',
 			'foundation' => '1536',
 			'category_size' => 'town',
-			'plantation' => 'meat',
-			'factory' => 'goods',
 			'population' => '1000',
 			'guards' => '200',
-			'fort' => 'Fort Fernando'
+			'fort' => 'Fort Fernando',	
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'indigo',
+			'farming' => 'meat',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'leatherwork',
+			'distillery' => 'none'
 		]);	
-		//45, venezuela, new granada
+		//46, guatemala
+		DB::table('towns')->insert([
+			'town_name' => 'Puerto Limon',
+			'country' => '6',
+			'colony' => '16',
+			'xcoord' => '1364',
+			'ycoord' => '2155',
+			'foundation' => '1569',
+			'category_size' => 'town',
+			'population' => '1000',
+			'guards' => '200',
+			'fort' => 'Fort Real',	
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'indigo',
+			'farming' => 'meat',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'leatherwork',
+			'distillery' => 'none'
+		]);	
+		//47, venezuela, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Cartagena',
 			'country' => '6',
@@ -676,13 +1166,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '2094',
 			'foundation' => '1533',
 			'category_size' => 'city',
-			'plantation' => 'silver',
-			'factory' => 'luxuries',
 			'population' => '6500',
 			'guards' => '500',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'silver',
+			'factory' => 'jewelry',
+			'distillery' => 'none'
 		]);	
-		//46, venezuela, new granada
+		//48, venezuela, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Puerto Bello',
 			'country' => '6',
@@ -691,13 +1191,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '2172',
 			'foundation' => '1597',
 			'category_size' => 'town',
-			'plantation' => 'silver',
-			'factory' => 'goods',
 			'population' => '900',
 			'guards' => '200',
-			'fort' => 'Fort Lorenzo'
+			'fort' => 'Fort Lorenzo',	
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'silver',
+			'factory' => 'goods',
+			'distillery' => 'none'
 		]);	
-		//47, venezuela, new granada
+		//49, venezuela, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Nombre de Dios',
 			'country' => '6',
@@ -706,13 +1216,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '2184',
 			'foundation' => '1540',
 			'category_size' => 'town',
-			'plantation' => 'silver',
-			'factory' => 'goods',
 			'population' => '1000',
 			'guards' => '200',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'silver',
+			'factory' => 'goods',
+			'distillery' => 'none'
 		]);
-		//48, venezuela, new granada
+		//50, venezuela, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Santa Marta',
 			'country' => '6',
@@ -721,13 +1241,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '2020',
 			'foundation' => '1525',
 			'category_size' => 'town',
-			'plantation' => 'coffee',
-			'factory' => 'goods',
 			'population' => '4000',
 			'guards' => '500',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',	
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'none'
 		]);	
-		//49, venezuela, new granada
+		//51, venezuela, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Rio de la Hacha',
 			'country' => '6',
@@ -736,13 +1266,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1992',
 			'foundation' => '1535',
 			'category_size' => 'town',
-			'plantation' => 'meat',
-			'factory' => 'luxuries',
 			'population' => '2000',
 			'guards' => '300',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'meat',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'leatherwork',
+			'distillery' => 'none'
 		]);
-		//50, venezuela, new granada
+		//52, venezuela, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Maracaibo',
 			'country' => '6',
@@ -751,13 +1291,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '2064',
 			'foundation' => '1529',
 			'category_size' => 'town',
-			'plantation' => 'coffee',
-			'factory' => 'goods',
 			'population' => '5000',
 			'guards' => '500',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',	
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'none'
 		]);	
-		//51, venezuela, new granada
+		//53, venezuela, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Puerto Cabello',
 			'country' => '6',
@@ -766,13 +1316,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '2088',
 			'foundation' => '1578',
 			'category_size' => 'town',
-			'plantation' => 'cocoa',
-			'factory' => 'luxuries',
 			'population' => '2000',
 			'guards' => '300',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'jewelry',
+			'distillery' => 'none'
 		]);	
-		//52, venezuela, new granada
+		//54, venezuela, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Caracas',
 			'country' => '6',
@@ -781,13 +1341,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '2077',
 			'foundation' => '1567',
 			'category_size' => 'city',
-			'plantation' => 'cocoa',
-			'factory' => 'goods',
 			'population' => '6500',
 			'guards' => '500',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'none'
 		]);
-		//53, venezuela, new granada
+		//55, venezuela, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Cumana',
 			'country' => '6',
@@ -796,13 +1366,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '2090',
 			'foundation' => '1515',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '4000',
 			'guards' => '500',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);			
-		//54, margarita, new granada
+		//56, margarita, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Porlamar',
 			'country' => '6',
@@ -811,13 +1391,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '2047',
 			'foundation' => '1536',
 			'category_size' => 'town',
-			'plantation' => 'cocoa',
-			'factory' => 'goods',
 			'population' => '5000',
 			'guards' => '500',
-			'fort' => 'Fort Real'
+			'fort' => 'Fort Real',		
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'none'
 		]);	
-		//55, trinidad, new granada
+		//57, trinidad, new granada
 		DB::table('towns')->insert([
 			'town_name' => 'Port au Spain',
 			'country' => '6',
@@ -826,14 +1416,24 @@ class TownSeeder extends Seeder
 			'ycoord' => '2074',
 			'foundation' => '1560',
 			'category_size' => 'town',
-			'plantation' => 'cocoa',
-			'factory' => 'goods',
 			'population' => '3500',
 			'guards' => '500',
-			'fort' => 'Fort George'
+			'fort' => 'Fort George',	
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'none'
 		]);			
 		//danish towns, 3 towns, 1 colony
-		//56, charlotte amelie, st. thomas, virgin islands
+		//58, charlotte amelie, st. thomas, virgin islands
 		DB::table('towns')->insert([
 			'town_name' => 'Taphus',
 			'country' => '7',
@@ -842,13 +1442,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1376',
 			'foundation' => '1666',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '1800',
 			'guards' => '300',
-			'fort' => 'Fort Christian'
+			'fort' => 'Fort Christian',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'none',
+			'distillery' => 'rum'
 		]);	
-		//57, st. john, virgin islands
+		//59, st. john, virgin islands
 		DB::table('towns')->insert([
 			'town_name' => 'Cruz Bay',
 			'country' => '7',
@@ -857,11 +1467,21 @@ class TownSeeder extends Seeder
 			'ycoord' => '1377',
 			'foundation' => '1673',
 			'category_size' => 'village',
-			'plantation' => 'cotton',
-			'factory' => 'cloth',
-			'population' => '200'
+			'population' => '200',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'textiles',
+			'mining' => 'none',
+			'factory' => 'calico',
+			'distillery' => 'rum'
 		]);	
-		//58, st. john, virgin islands
+		//60, st. john, virgin islands
 		DB::table('towns')->insert([
 			'town_name' => 'Coral Bay',
 			'country' => '7',
@@ -870,14 +1490,24 @@ class TownSeeder extends Seeder
 			'ycoord' => '1375',
 			'foundation' => '1673',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '300',
 			'guards' => '80',
-			'fort' => 'Fort Frederik'
+			'fort' => 'Fort Frederik',		
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'textiles',
+			'mining' => 'none',
+			'factory' => 'calico',
+			'distillery' => 'rum'
 		]);	
 		//curonian towns, 1 town, 1 colony
-		//59, tobago, new courland
+		//61, tobago, new courland
 		DB::table('towns')->insert([
 			'town_name' => 'Jacobsstadt',
 			'country' => '8',
@@ -886,14 +1516,24 @@ class TownSeeder extends Seeder
 			'ycoord' => '2024',
 			'foundation' => '1658',
 			'category_size' => 'town',
-			'plantation' => 'cocoa',
-			'factory' => 'goods',
 			'population' => '500',
 			'guards' => '150',
-			'fort' => 'Fort Jacobus'
+			'fort' => 'Fort Jacobus',			
+			'sugarcane_plantation' => 'none',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fuits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'none'
 		]);	
 		//hospitaller towns, 3 towns, 1 colony
-		//60, st. kitts
+		//62, st. kitts
 		DB::table('towns')->insert([
 			'town_name' => 'Basseterre',
 			'country' => '9',
@@ -902,13 +1542,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1472',
 			'foundation' => '1639',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '1500',
 			'guards' => '300',
-			'fort' => 'Fort Charles'
+			'fort' => 'Fort Charles',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'pottery',
+			'distillery' => 'rum'
 		]);	
-		//61, st. barths
+		//63, st. barths
 		DB::table('towns')->insert([
 			'town_name' => 'Carenage',
 			'country' => '9',
@@ -917,13 +1567,23 @@ class TownSeeder extends Seeder
 			'ycoord' => '1415',
 			'foundation' => '1648',
 			'category_size' => 'town',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
 			'population' => '900',
 			'guards' => '200',
-			'fort' => 'Fort Oscar'
+			'fort' => 'Fort Oscar',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'none',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'none',
+			'mining' => 'none',
+			'factory' => 'goods',
+			'distillery' => 'rum'
 		]);	
-		//62, st. croix, virgin islands
+		//64, st. croix, virgin islands
 		DB::table('towns')->insert([
 			'town_name' => 'Saint Croix',
 			'country' => '9',
@@ -932,9 +1592,19 @@ class TownSeeder extends Seeder
 			'ycoord' => '1434',
 			'foundation' => '1695',
 			'category_size' => 'village',
-			'plantation' => 'sugar',
-			'factory' => 'rum',
-			'population' => '200'
+			'population' => '200',	
+			'sugarcane_plantation' => 'sugarcane',
+			'spices_plantation' => 'none',
+			'cocoa_plantation' => 'none',
+			'tobacco_plantation' => 'none',
+			'coffee_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
+			'dyes_plantation' => 'none',
+			'farming' => 'fruits',
+			'mill' => 'textiles',
+			'mining' => 'none',
+			'factory' => 'calico',
+			'distillery' => 'rum'
 		]);			
 		
     }

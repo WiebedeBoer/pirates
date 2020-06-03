@@ -20,43 +20,62 @@ class CreateTownsTable extends Migration
 			$table->unsignedBigInteger('country')->nullable();
 			$table->unsignedBigInteger('colony')->nullable();
 			//coordinates
-			$table->integer('xcoord')->default(1);
-			$table->integer('ycoord')->default(1);
+			$table->integer('xcoord');
+			$table->integer('ycoord');
 			//foundation
-			$table->integer('foundation')->default(1500);
+			$table->integer('foundation');
 			//size
-			$table->string('category_size')->default('town');
-			//plantation
-			$table->string('plantation')->default('none');
-			//factory
-			$table->string('factory')->default('none');
+			$table->string('category_size');
 			//population
-			$table->integer('population')->default(1000);
+			$table->integer('population');
 			//soldiers
 			$table->integer('guards')->default(1);
 			$table->integer('recruits')->default(1);
 			//fort
 			$table->string('fort')->default('none');
-			//plantation
+			//plantation culture
+			$table->string('sugarcane_plantation')->default('none');
+			$table->string('spices_plantation')->default('none');
+			$table->string('cocoa_plantation')->default('none');
+			$table->string('tobacco_plantation')->default('none');
+			$table->string('coffee_plantation')->default('none');
+			$table->string('cotton_plantation')->default('none');
+			$table->string('dyes_plantation')->default('none');
+			//farming culture
+			$table->string('farming')->default('none');
+			//saw and cloth mill culture
+			$table->string('mill')->default('none');
+			//mining culture
+			$table->string('mining')->default('none');
+			//factory culture
+			$table->string('factory')->default('none');
+			//distillery culture
+			$table->string('distillery')->default('none');
+			//plantation production
 			$table->integer('sugar')->default(0);
 			$table->integer('spices')->default(0);
 			$table->integer('cocoa')->default(0);
 			$table->integer('tobacco')->default(0);
 			$table->integer('coffee')->default(0);
 			$table->integer('cotton')->default(0);
-			$table->integer('naval_stores')->default(0);
-			//mining
+			$table->integer('dyes')->default(0);
+			//mill production
+			$table->integer('wood')->default(0);
+			$table->integer('textiles')->default(0);
+			//mining production
 			$table->integer('salt')->default(0);
 			$table->integer('silver')->default(0);
-			//farm
+			//farm production
 			$table->integer('meat')->default(0);
 			$table->integer('fruits')->default(0);
-			//production
-			$table->integer('cloth')->default(0);		
+			//factory production				
 			$table->integer('goods')->default(0);
-			$table->integer('luxuries')->default(0);
+			$table->integer('leatherwork')->default(0);
+			$table->integer('jewelry')->default(0);
+			$table->integer('pottery')->default(0);
+			//distillery production
 			$table->integer('rum')->default(0);
-			//weaponry
+			//weaponry production
 			$table->integer('guns')->default(0);
 			$table->integer('pistols')->default(0);
 			$table->integer('swords')->default(0);
