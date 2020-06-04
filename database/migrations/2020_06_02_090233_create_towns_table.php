@@ -63,6 +63,7 @@ class CreateTownsTable extends Migration
 			$table->integer('wood')->default(0);
 			$table->integer('textiles')->default(0);
 			//mining production
+			$table->integer('copper')->default(0);
 			$table->integer('salt')->default(0);
 			$table->integer('silver')->default(0);
 			//farm production

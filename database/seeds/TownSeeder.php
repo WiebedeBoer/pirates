@@ -33,7 +33,7 @@ class TownSeeder extends Seeder
 			'dyes_plantation' => 'indigo',
 			'farming' => 'fruits',
 			'mill' => 'none',
-			'mining' => 'none',
+			'mining' => 'copper',
 			'factory' => 'jewelry',
 			'distillery' => 'rum'				
 		]);
@@ -360,7 +360,7 @@ class TownSeeder extends Seeder
 			'dyes_plantation' => 'none',
 			'farming' => 'meat',
 			'mill' => 'none',
-			'mining' => 'none',
+			'mining' => 'salt',
 			'factory' => 'leatherwork',
 			'distillery' => 'none'
 		]);
@@ -880,7 +880,7 @@ class TownSeeder extends Seeder
 			'dyes_plantation' => 'none',
 			'farming' => 'meat',
 			'mill' => 'textiles',
-			'mining' => 'none',
+			'mining' => 'copper',
 			'factory' => 'leatherwork',
 			'distillery' => 'rum'
 		]);	
@@ -905,7 +905,7 @@ class TownSeeder extends Seeder
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
 			'mill' => 'wood',
-			'mining' => 'none',
+			'mining' => 'copper',
 			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);	
