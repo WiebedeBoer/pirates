@@ -32,7 +32,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'indigo',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'copper',
 			'factory' => 'jewelry',
 			'distillery' => 'rum'				
@@ -334,7 +334,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'meat',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'leatherwork',
 			'distillery' => 'none'
@@ -630,7 +630,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'indigo',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'goods',
 			'distillery' => 'rum'
@@ -655,7 +655,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'goods',
 			'distillery' => 'rum'
@@ -755,7 +755,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'indigo',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'jewelry',
 			'distillery' => 'rum'
@@ -780,7 +780,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'indigo',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'goods',
 			'distillery' => 'rum'
@@ -856,7 +856,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'wood',
 			'mining' => 'none',
 			'factory' => 'goods',
 			'distillery' => 'rum'
@@ -929,7 +929,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'copper',
 			'factory' => 'goods',
 			'distillery' => 'rum'
@@ -954,7 +954,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'goods',
 			'distillery' => 'rum'
@@ -1052,7 +1052,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'meat',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'silver',
 			'factory' => 'leatherwork',
 			'distillery' => 'none'
@@ -1177,7 +1177,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'silver',
 			'factory' => 'jewelry',
 			'distillery' => 'none'
@@ -1252,7 +1252,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'goods',
 			'distillery' => 'none'
@@ -1302,7 +1302,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'goods',
 			'distillery' => 'none'
@@ -1327,7 +1327,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'jewelry',
 			'distillery' => 'none'
@@ -1352,7 +1352,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'goods',
 			'distillery' => 'none'
@@ -1377,7 +1377,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
 			'factory' => 'goods',
 			'distillery' => 'rum'
@@ -1427,7 +1427,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'wood',
 			'mining' => 'none',
 			'factory' => 'goods',
 			'distillery' => 'none'
@@ -1453,9 +1453,9 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'grist',
 			'mining' => 'none',
-			'factory' => 'goods',
+			'factory' => 'pottery',
 			'distillery' => 'rum'
 		]);	
 		//59, st. john, virgin islands
@@ -1526,7 +1526,7 @@ class TownSeeder extends Seeder
 			'coffee_plantation' => 'none',
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
-			'farming' => 'fuits',
+			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
 			'factory' => 'goods',

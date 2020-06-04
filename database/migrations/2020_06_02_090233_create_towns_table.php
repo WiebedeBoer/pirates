@@ -34,23 +34,23 @@ class CreateTownsTable extends Migration
 			//fort
 			$table->string('fort')->default('none');
 			//plantation culture
-			$table->string('sugarcane_plantation')->default('none'); //sugarcane
-			$table->string('spices_plantation')->default('none'); //spices
-			$table->string('cocoa_plantation')->default('none'); //cocoa
-			$table->string('tobacco_plantation')->default('none'); //tobacco
-			$table->string('coffee_plantation')->default('none'); //coffee
-			$table->string('cotton_plantation')->default('none'); //cotton
-			$table->string('dyes_plantation')->default('none'); //indigo
+			$table->string('sugarcane_plantation')->default('none'); //37 sugarcane
+			$table->string('spices_plantation')->default('none'); //5 spices
+			$table->string('cocoa_plantation')->default('none'); //15 cocoa
+			$table->string('tobacco_plantation')->default('none'); //13 tobacco
+			$table->string('coffee_plantation')->default('none'); //16 coffee
+			$table->string('cotton_plantation')->default('none'); //12 cotton
+			$table->string('dyes_plantation')->default('none'); //12 indigo
 			//farming culture
-			$table->string('farming')->default('none'); //fruits, meat
+			$table->string('farming')->default('none'); //49 fruits, 15 meat
 			//mill culture
-			$table->string('mill')->default('none'); //wood, textiles
+			$table->string('mill')->default('none'); //10 wood, 17 textiles, 16 grist
 			//mining culture
-			$table->string('mining')->default('none'); //copper, salt, silver
+			$table->string('mining')->default('none'); //4 copper, 6 salt, 5 silver
 			//factory culture
-			$table->string('factory')->default('none'); //calico, goods, leatherwork, pottery
+			$table->string('factory')->default('none'); //15 calico, 27 goods, 5 jewelry, 10 leatherwork, 7 pottery
 			//distillery culture
-			$table->string('distillery')->default('none'); //rum
+			$table->string('distillery')->default('none'); //37 rum
 			//plantation production
 			$table->integer('sugar')->default(0);
 			$table->integer('spices')->default(0);
@@ -67,6 +67,7 @@ class CreateTownsTable extends Migration
 			$table->integer('salt')->default(0);
 			$table->integer('silver')->default(0);
 			//farm production
+			$table->integer('corn')->default(0);
 			$table->integer('meat')->default(0);
 			$table->integer('fruits')->default(0);
 			//factory production				
