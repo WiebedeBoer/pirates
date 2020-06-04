@@ -134,7 +134,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'wood',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'	
 		]);
 		//6, providence, honduras
@@ -483,7 +483,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);
 		//20, anguilla, leewards islands
@@ -551,12 +551,12 @@ class TownSeeder extends Seeder
 			'cocoa_plantation' => 'none',
 			'tobacco_plantation' => 'none',
 			'coffee_plantation' => 'none',
-			'cotton_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'textiles',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'calico',
 			'distillery' => 'rum'
 		]);	
 		//23, barbados, windward islands
@@ -572,16 +572,16 @@ class TownSeeder extends Seeder
 			'guards' => '500',
 			'fort' => 'Fort Charles',		
 			'sugarcane_plantation' => 'sugarcane',
-			'spices_plantation' => 'none',
+			'spices_plantation' => 'spices',
 			'cocoa_plantation' => 'none',
 			'tobacco_plantation' => 'tobacco',
 			'coffee_plantation' => 'none',
-			'cotton_plantation' => 'none',
-			'dyes_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
+			'dyes_plantation' => 'indigo',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'textiles',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'calico',
 			'distillery' => 'rum'
 		]);	
 		//24, grenada, windward islands
@@ -632,7 +632,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);	
 		//26, guadeloupe
@@ -649,15 +649,15 @@ class TownSeeder extends Seeder
 			'fort' => 'Fort Fleur',		
 			'sugarcane_plantation' => 'sugarcane',
 			'spices_plantation' => 'none',
-			'cocoa_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
 			'tobacco_plantation' => 'none',
-			'coffee_plantation' => 'none',
+			'coffee_plantation' => 'coffee',
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);	
 		//27, marie galante, guadeloupe
@@ -675,14 +675,14 @@ class TownSeeder extends Seeder
 			'sugarcane_plantation' => 'sugarcane',
 			'spices_plantation' => 'none',
 			'cocoa_plantation' => 'none',
-			'tobacco_plantation' => 'none',
-			'coffee_plantation' => 'none',
-			'cotton_plantation' => 'none',
-			'dyes_plantation' => 'none',
+			'tobacco_plantation' => 'tobacco',
+			'coffee_plantation' => 'coffee',
+			'cotton_plantation' => 'cotton',
+			'dyes_plantation' => 'indigo',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'textiles',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'calico',
 			'distillery' => 'rum'
 		]);
 		//28, st. lucia
@@ -707,7 +707,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'pottery',
 			'distillery' => 'rum'
 		]);	
 		//29, dominica
@@ -724,7 +724,7 @@ class TownSeeder extends Seeder
 			'fort' => 'Fort Comfort',		
 			'sugarcane_plantation' => 'sugarcane',
 			'spices_plantation' => 'none',
-			'cocoa_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
 			'tobacco_plantation' => 'none',
 			'coffee_plantation' => 'none',
 			'cotton_plantation' => 'none',
@@ -732,7 +732,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'pottery',
 			'distillery' => 'rum'
 		]);	
 		//30, haiti
@@ -782,7 +782,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);			
 		//spanish towns, 26 towns, 7 colonies
@@ -797,7 +797,7 @@ class TownSeeder extends Seeder
 			'category_size' => 'city',
 			'population' => '6500',
 			'guards' => '500',
-			'fort' => 'Fort Real',	
+			'fort' => 'Fort Ozama',	
 			'sugarcane_plantation' => 'sugarcane',
 			'spices_plantation' => 'none',
 			'cocoa_plantation' => 'none',
@@ -808,7 +808,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);	
 		//33, hispaniola
@@ -828,12 +828,12 @@ class TownSeeder extends Seeder
 			'cocoa_plantation' => 'none',
 			'tobacco_plantation' => 'none',
 			'coffee_plantation' => 'coffee',
-			'cotton_plantation' => 'none',
+			'cotton_plantation' => 'cotton',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'textiles',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'calico',
 			'distillery' => 'rum'
 		]);	
 		//34, puerto rico
@@ -858,7 +858,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);	
 		//35, puerto rico
@@ -904,14 +904,14 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'wood',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);	
 		//37, cuba
 		DB::table('towns')->insert([
-			'town_name' => 'Santiago',
+			'town_name' => 'Santiago de Cuba',
 			'country' => '6',
 			'colony' => '13',
 			'xcoord' => '1976',
@@ -930,8 +930,8 @@ class TownSeeder extends Seeder
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
 			'mill' => 'none',
-			'mining' => 'none',
-			'factory' => 'none',
+			'mining' => 'copper',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);	
 		//38, cuba
@@ -948,7 +948,7 @@ class TownSeeder extends Seeder
 			'fort' => 'Fort Real',		
 			'sugarcane_plantation' => 'sugarcane',
 			'spices_plantation' => 'none',
-			'cocoa_plantation' => 'none',
+			'cocoa_plantation' => 'cocoa',
 			'tobacco_plantation' => 'none',
 			'coffee_plantation' => 'none',
 			'cotton_plantation' => 'none',
@@ -956,7 +956,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);	
 		//39, florida, cuba
@@ -1029,9 +1029,9 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'none',
 			'farming' => 'fruits',
-			'mill' => 'none',
+			'mill' => 'wood',
 			'mining' => 'silver',
-			'factory' => 'none',
+			'factory' => 'pottery',
 			'distillery' => 'rum'
 		]);	
 		//42, mexico
@@ -1070,12 +1070,12 @@ class TownSeeder extends Seeder
 			'guards' => '300',
 			'fort' => 'Fort Miguel',	
 			'sugarcane_plantation' => 'none',
-			'spices_plantation' => 'none',
-			'cocoa_plantation' => 'none',
+			'spices_plantation' => 'spices',
+			'cocoa_plantation' => 'cocoa',
 			'tobacco_plantation' => 'none',
 			'coffee_plantation' => 'coffee',
 			'cotton_plantation' => 'none',
-			'dyes_plantation' => 'none',
+			'dyes_plantation' => 'indigo',
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'salt',
@@ -1102,7 +1102,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'indigo',
 			'farming' => 'meat',
-			'mill' => 'none',
+			'mill' => 'wood',
 			'mining' => 'none',
 			'factory' => 'leatherwork',
 			'distillery' => 'none'
@@ -1127,7 +1127,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'indigo',
 			'farming' => 'meat',
-			'mill' => 'none',
+			'mill' => 'wood',
 			'mining' => 'none',
 			'factory' => 'leatherwork',
 			'distillery' => 'none'
@@ -1152,7 +1152,7 @@ class TownSeeder extends Seeder
 			'cotton_plantation' => 'none',
 			'dyes_plantation' => 'indigo',
 			'farming' => 'meat',
-			'mill' => 'none',
+			'mill' => 'wood',
 			'mining' => 'none',
 			'factory' => 'leatherwork',
 			'distillery' => 'none'
@@ -1379,7 +1379,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);			
 		//56, margarita, new granada
@@ -1455,7 +1455,7 @@ class TownSeeder extends Seeder
 			'farming' => 'fruits',
 			'mill' => 'none',
 			'mining' => 'none',
-			'factory' => 'none',
+			'factory' => 'goods',
 			'distillery' => 'rum'
 		]);	
 		//59, st. john, virgin islands

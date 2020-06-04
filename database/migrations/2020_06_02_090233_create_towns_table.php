@@ -46,7 +46,7 @@ class CreateTownsTable extends Migration
 			//mill culture
 			$table->string('mill')->default('none'); //wood, textiles
 			//mining culture
-			$table->string('mining')->default('none'); //salt, silver
+			$table->string('mining')->default('none'); //copper, salt, silver
 			//factory culture
 			$table->string('factory')->default('none'); //calico, goods, leatherwork, pottery
 			//distillery culture
